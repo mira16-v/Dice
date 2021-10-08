@@ -6,7 +6,8 @@ void setup()
 }
 void draw()
 {
-  Int totalRoll = 0;
+  background(216, 171, 255);
+  int totalRoll = 0;
   for(int i = 0; i < 3; i++)
   {
      for(int m = 0; m < 3; m++)
