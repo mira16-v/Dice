@@ -49,32 +49,37 @@ class Die //models one single dice cube
 	rect(myX, myY, 50, 50);
 	fill(0, 0, 0);
 	if(numRoll == 1){
-  	ellipse(myX+25, myY+25, 5, 5);
-	} else if (numRoll == 2){
-  	ellipse(myX+25, myY+12.5, 5, 5);
-  	ellipse(myX+25, myY+37.5, 5, 5);
-	} else if (numRoll == 3){
-  	ellipse(myX+5, myY+5, 5, 5);
-  	ellipse(myX+10, myY+10, 5, 5);
-  	ellipse(myX+15, myY+15, 5, 5);
-	} else if (numRoll == 4){
-  	ellipse(myX+5, myY+5, 5, 5);
-  	ellipse(myX+15, myY+5, 5, 5);
-  	ellipse(myX+5, myY+15, 5, 5);
-  	ellipse(myX+15, myY+15, 5, 5);
-	} else if (numRoll == 5){
-  	ellipse(myX+5, myY+5, 5, 5);
-  	ellipse(myX+15, myY+5, 5, 5);
-  	ellipse(myX+5, myY+15, 5, 5);
-  	ellipse(myX+15, myY+15, 5, 5);
-  	ellipse(myX+25, myY+25, 5, 5);
-	}  else if(numRoll == 6){
-  	ellipse(myX+5, myY+5, 5, 5);
-  	ellipse(myX+15, myY+5, 5, 5);
-  	ellipse(myX+5, myY+10, 5, 5);
-  	ellipse(myX+15, myY+10, 5, 5);
-  	ellipse(myX+5, myY+15, 5, 5);
-  	ellipse(myX+15, myY+15, 5, 5);
+  	ellipse(myX+25, myY+25, 10,10);
+	} 
+else if (numRoll == 2){
+  	ellipse(myX+25, myY+12.5,10,10);
+  	ellipse(myX+25, myY+37.5,10,10);
+	} 
+else if (numRoll == 3){
+  	ellipse(myX+5, myY+5,10,10);
+  	ellipse(myX+10, myY+10,10,10);
+  	ellipse(myX+15, myY+15,10,10);
+	} 
+else if (numRoll == 4){
+  	ellipse(myX+5, myY+5,10,10);
+  	ellipse(myX+15, myY+5,10,10);
+  	ellipse(myX+5, myY+15,10,10);
+  	ellipse(myX+15, myY+15,10,10);
+	} 
+else if (numRoll ==5){
+  	ellipse(myX+5, myY+5,10,10);
+  	ellipse(myX+15, myY+5,10,10);
+  	ellipse(myX+5, myY+15,10,10);
+  	ellipse(myX+15, myY+15,10,10);
+  	ellipse(myX+25, myY+25,10,10);
+	}  
+else if(numRoll == 6){
+  	ellipse(myX+5, myY+5,10,10);
+  	ellipse(myX+15, myY+5,10,10);
+  	ellipse(myX+5, myY+10,10,10);
+  	ellipse(myX+15, myY+10,10,10);
+  	ellipse(myX+5, myY+15,10,10);
+  	ellipse(myX+15, myY+15,10,10);
 	}
   }
 }
