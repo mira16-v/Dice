@@ -11,7 +11,7 @@ void draw()
   {
 	for (int m = 0; m < 3; m++)
 	{
-  	maya = new Die(m*60, i*60);
+  	maya = new Die(m*100, i*100);
   	maya.show();
   	maya.roll();
 	}
@@ -49,37 +49,37 @@ class Die //models one single dice cube
 	rect(myX, myY, 50, 50);
 	fill(0, 0, 0);
 	if(numRoll == 1){
-  	ellipse(myX+25, myY+25, 10,10);
+  	ellipse(myX+50, myY+50, 30,30);
 	} 
 else if (numRoll == 2){
-  	ellipse(myX+25, myY+12.5,10,10);
-  	ellipse(myX+25, myY+37.5,10,10);
+  	ellipse(myX+33, myY+50,30,30);
+  	ellipse(myX+67, myY+50,30,30);
 	} 
 else if (numRoll == 3){
-  	ellipse(myX+5, myY+5,10,10);
-  	ellipse(myX+10, myY+10,10,10);
-  	ellipse(myX+15, myY+15,10,10);
+  	ellipse(myX+10, myY+10,30,30);
+  	ellipse(myX+15, myY+15,30,30);
+  	ellipse(myX+20, myY+20,30,30);
 	} 
 else if (numRoll == 4){
-  	ellipse(myX+5, myY+5,10,10);
-  	ellipse(myX+15, myY+5,10,10);
-  	ellipse(myX+5, myY+15,10,10);
-  	ellipse(myX+15, myY+15,10,10);
+  	ellipse(myX+33, myY+33, 30,30);
+  	ellipse(myX+67, myY+33, 30,30);
+  	ellipse(myX+33, myY+67, 30,30);
+  	ellipse(myX+67, myY+67, 30,30);
 	} 
 else if (numRoll ==5){
-  	ellipse(myX+5, myY+5,10,10);
-  	ellipse(myX+15, myY+5,10,10);
-  	ellipse(myX+5, myY+15,10,10);
-  	ellipse(myX+15, myY+15,10,10);
-  	ellipse(myX+25, myY+25,10,10);
+  	ellipse(myX+33, myY+33, 30,30);
+  	ellipse(myX+67, myY+33, 30,30);
+  	ellipse(myX+33, myY+67, 30,30);
+  	ellipse(myX+67, myY+67, 30,30);
+  	ellipse(myX+50, myY+50, 30,30);
 	}  
 else if(numRoll == 6){
-  	ellipse(myX+5, myY+5,10,10);
-  	ellipse(myX+15, myY+5,10,10);
-  	ellipse(myX+5, myY+10,10,10);
-  	ellipse(myX+15, myY+10,10,10);
-  	ellipse(myX+5, myY+15,10,10);
-  	ellipse(myX+15, myY+15,10,10);
+  	ellipse(myX+33, myY+33, 30,30);
+  	ellipse(myX+33, myY+67, 30,30);
+  	ellipse(myX+33, myY+45, 30,30);
+  	ellipse(myX+67, myY+33, 30,30);
+  	ellipse(myX+67, myY+45 30,30);
+  	ellipse(myX+67, myY+67, 30,30);
 	}
   }
 }
