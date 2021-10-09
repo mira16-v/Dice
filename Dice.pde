@@ -7,20 +7,15 @@ void setup()
 void draw()
 {
   background(216, 171, 255);
-  int totalRoll = 0;
-  for(int i = 0; i < 3; i++)
+  for (int i = 0; i < 3; i++)
   {
-     for(int m = 0; m < 3; m++)
+	for (int m = 0; m < 3; m++)
 	{
-       	  maya = new Die(m*60, i*60);
-     	  maya.show();
-          If (maya.roll(); < 7)
-         {
-          totalRoll = totalRoll + maya.roll;
-         }
-        }
-   }
-   	System.out.print(“Total Sum: “ totalRoll);
+  	maya = new Die(m*60, i*60);
+  	maya.show();
+  	maya.roll();
+	}
+  }
 }
 
 void mousePressed()
@@ -39,20 +34,47 @@ class Die //models one single dice cube
 	numRoll = (int)(Math.random() * 6) + 1;
 	myX = x;
 	myY = y;
-    
   }
   void roll()
   {
 	numRoll = (int)(Math.random() * 6) + 1;
   }
-   
+
   void show()
   {
 	//your code here
-   noStroke();
-   fill(169, 252, 197);
-   rect(myX, myY, 50, 50);
- 
+    
+	noStroke();
+	fill(((int)(Math.random()* 202)+ 95),(int)((Math.random()* 243) + 155), ((int)(Math.random()*227)+132));
+	rect(myX, myY, 50, 50);
+	fill(0, 0, 0);
+	if(numRoll == 1){
+  	ellipse(myX+25, myY+25, 5, 5);
+	} else if (numRoll == 2){
+  	ellipse(myX+25, myY+12.5, 5, 5);
+  	ellipse(myX+25, myY+37.5, 5, 5);
+	} else if (numRoll == 3){
+  	ellipse(myX+5, myY+5, 5, 5);
+  	ellipse(myX+10, myY+10, 5, 5);
+  	ellipse(myX+15, myY+15, 5, 5);
+	} else if (numRoll == 4){
+  	ellipse(myX+5, myY+5, 5, 5);
+  	ellipse(myX+15, myY+5, 5, 5);
+  	ellipse(myX+5, myY+15, 5, 5);
+  	ellipse(myX+15, myY+15, 5, 5);
+	} else if (numRoll == 5){
+  	ellipse(myX+5, myY+5, 5, 5);
+  	ellipse(myX+15, myY+5, 5, 5);
+  	ellipse(myX+5, myY+15, 5, 5);
+  	ellipse(myX+15, myY+15, 5, 5);
+  	ellipse(myX+25, myY+25, 5, 5);
+	}  else if(numRoll == 6){
+  	ellipse(myX+5, myY+5, 5, 5);
+  	ellipse(myX+15, myY+5, 5, 5);
+  	ellipse(myX+5, myY+10, 5, 5);
+  	ellipse(myX+15, myY+10, 5, 5);
+  	ellipse(myX+5, myY+15, 5, 5);
+  	ellipse(myX+15, myY+15, 5, 5);
+	}
   }
-
 }
