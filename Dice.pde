@@ -51,29 +51,29 @@ class Die //models one single dice cube
 	if(numRoll == 1){
   	ellipse(myX+50, myY+50, 30,30);
 	} 
-else if (numRoll == 2){
+	else if (numRoll == 2){
   	ellipse(myX+33, myY+50,30,30);
   	ellipse(myX+67, myY+50,30,30);
 	} 
-else if (numRoll == 3){
+	else if (numRoll == 3){
   	ellipse(myX+10, myY+10,30,30);
   	ellipse(myX+15, myY+15,30,30);
   	ellipse(myX+20, myY+20,30,30);
 	} 
-else if (numRoll == 4){
+	else if (numRoll == 4){
   	ellipse(myX+33, myY+33, 30,30);
   	ellipse(myX+67, myY+33, 30,30);
   	ellipse(myX+33, myY+67, 30,30);
   	ellipse(myX+67, myY+67, 30,30);
 	} 
-else if (numRoll ==5){
+	else if (numRoll ==5){
   	ellipse(myX+33, myY+33, 30,30);
   	ellipse(myX+67, myY+33, 30,30);
   	ellipse(myX+33, myY+67, 30,30);
   	ellipse(myX+67, myY+67, 30,30);
   	ellipse(myX+50, myY+50, 30,30);
 	}  
-else if(numRoll == 6){
+	else if(numRoll == 6){
   	ellipse(myX+33, myY+33, 30,30);
   	ellipse(myX+33, myY+67, 30,30);
   	ellipse(myX+33, myY+45, 30,30);
