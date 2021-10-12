@@ -13,11 +13,11 @@ void draw()
 	for (int m = 0; m < 3; m++)
 	{
   	maya = new Die(m*100, i*100);
-  	maya.show();
   	maya.roll();
+  	maya.show();
 	totalRolls = totalRolls + oneDieroll;
 	}
-  } System.out.println(“Total sum =” totalRolls);
+  } 
 }
 
 void mousePressed()
