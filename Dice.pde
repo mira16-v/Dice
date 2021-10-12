@@ -64,7 +64,7 @@ class Die //models one single dice cube
   	ellipse(myX+67, myY+33, 30,30);
   	ellipse(myX+33, myY+67, 30,30);
   	ellipse(myX+67, myY+67, 30,30);
-	} else if (numRoll ==5){
+	} else if (numRoll == 5){
   	ellipse(myX+33, myY+33, 30,30);
   	ellipse(myX+67, myY+33, 30,30);
   	ellipse(myX+33, myY+67, 30,30);
