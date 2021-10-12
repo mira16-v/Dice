@@ -1,9 +1,15 @@
+Die maya;
+void setup()
+{
+  size(500, 500);
+  noLoop();
+}
 void draw()
 {
   int totalRolls = 0;
   background(216, 171, 255);
   for (int i = 0; i < 3; i++)
-  { 
+  {
   for (int m = 0; m < 3; m++)
   {
     maya = new Die(m*100, i*100);
@@ -11,7 +17,7 @@ void draw()
     maya.show();
     totalRolls = totalRolls + maya.numRoll;
     }
-  } //System.out.println(totalRolls);
+  } System.out.println(totalRolls);
 }
 
 void mousePressed()
