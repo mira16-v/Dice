@@ -14,8 +14,9 @@ void draw()
   	maya = new Die(m*100, i*100);
   	maya.show();
   	maya.roll();
+	totalRolls = 0 + oneDieroll
 	}
-  }
+  } System.out.println(“Total sum =” totalRolls);
 }
 
 void mousePressed()
@@ -48,38 +49,34 @@ class Die //models one single dice cube
 	fill(((int)(Math.random()* 202)+ 95),(int)((Math.random()* 243) + 155), ((int)(Math.random()*227)+132));
 	rect(myX, myY, 50, 50);
 	fill(0, 0, 0);
+	numRoll = oneDieroll
 	if(numRoll == 1){
   	ellipse(myX+50, myY+50, 30,30);
-	} 
-	else if (numRoll == 2){
+	} else if (numRoll == 2){
   	ellipse(myX+33, myY+50,30,30);
   	ellipse(myX+67, myY+50,30,30);
-	} 
-	else if (numRoll == 3){
+	} else if (numRoll == 3){
   	ellipse(myX+10, myY+10,30,30);
   	ellipse(myX+15, myY+15,30,30);
   	ellipse(myX+20, myY+20,30,30);
-	} 
-	else if (numRoll == 4){
+	} else if (numRoll == 4){
   	ellipse(myX+33, myY+33, 30,30);
   	ellipse(myX+67, myY+33, 30,30);
   	ellipse(myX+33, myY+67, 30,30);
   	ellipse(myX+67, myY+67, 30,30);
-	} 
-	else if (numRoll ==5){
+	} else if (numRoll ==5){
   	ellipse(myX+33, myY+33, 30,30);
   	ellipse(myX+67, myY+33, 30,30);
   	ellipse(myX+33, myY+67, 30,30);
   	ellipse(myX+67, myY+67, 30,30);
   	ellipse(myX+50, myY+50, 30,30);
-	}  
-	else if(numRoll == 6){
+	}  else{
   	ellipse(myX+33, myY+33, 30,30);
   	ellipse(myX+33, myY+67, 30,30);
   	ellipse(myX+33, myY+45, 30,30);
   	ellipse(myX+67, myY+33, 30,30);
   	ellipse(myX+67, myY+45 30,30);
   	ellipse(myX+67, myY+67, 30,30);
-	}
+	} 
   }
 }
