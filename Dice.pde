@@ -3,7 +3,8 @@ void draw()
   int totalRolls = 0;
   background(216, 171, 255);
   for (int i = 0; i < 3; i++)
-  { for (int m = 0; m < 3; m++)
+  { 
+  for (int m = 0; m < 3; m++)
   {
     maya = new Die(m*100, i*100);
     maya.roll();
