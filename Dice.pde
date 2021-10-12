@@ -6,6 +6,7 @@ void setup()
 }
 void draw()
 {
+  int totalRolls = 0;
   background(216, 171, 255);
   for (int i = 0; i < 3; i++)
   {
@@ -14,7 +15,7 @@ void draw()
   	maya = new Die(m*100, i*100);
   	maya.show();
   	maya.roll();
-	totalRolls = 0 + oneDieroll
+	totalRolls = totalRolls + oneDieroll;
 	}
   } System.out.println(“Total sum =” totalRolls);
 }
@@ -49,7 +50,7 @@ class Die //models one single dice cube
 	fill(((int)(Math.random()* 202)+ 95),(int)((Math.random()* 243) + 155), ((int)(Math.random()*227)+132));
 	rect(myX, myY, 50, 50);
 	fill(0, 0, 0);
-	numRoll = oneDieroll
+	int oneDieroll = numRoll;
 	if(numRoll == 1){
   	ellipse(myX+50, myY+50, 30,30);
 	} else if (numRoll == 2){
@@ -64,7 +65,7 @@ class Die //models one single dice cube
   	ellipse(myX+67, myY+33, 30,30);
   	ellipse(myX+33, myY+67, 30,30);
   	ellipse(myX+67, myY+67, 30,30);
-	} else if (numRoll == 5){
+	} else if (numRoll ==5){
   	ellipse(myX+33, myY+33, 30,30);
   	ellipse(myX+67, myY+33, 30,30);
   	ellipse(myX+33, myY+67, 30,30);
@@ -77,6 +78,6 @@ class Die //models one single dice cube
   	ellipse(myX+67, myY+33, 30,30);
   	ellipse(myX+67, myY+45 30,30);
   	ellipse(myX+67, myY+67, 30,30);
-	} 
+	}
   }
 }
