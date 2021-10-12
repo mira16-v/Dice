@@ -17,7 +17,8 @@ void draw()
     maya.show();
     totalRolls = totalRolls + maya.numRoll;
     }
-  } System.out.println(totalRolls);
+  } //System.out.println(totalRolls);
+  text(totalRolls, 400, 400);
 }
 
 void mousePressed()
